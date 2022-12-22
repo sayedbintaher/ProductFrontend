@@ -26,6 +26,7 @@
   <div class="border border-4 border-dark rounded-3 p-lg-5 bg-dark">
     <div class="d-flex align-items-center justify-content-center">
       <div *ngIf="editProduct" class="col-lg-6 col-md-12 col-sm-12">
+        <img src="{{editProduct.imageLink}}" style="height:300px;width: 100%;"/>
         <div class="mb-3">
           <label for="imageLink" class="form-label text-white">Image Link</label>
           <input [(ngModel)]="editProduct.imageLink" class="form-control" placeholder="Image Link">
