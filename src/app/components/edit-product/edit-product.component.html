@@ -26,29 +26,37 @@
   <div class="border border-4 border-dark rounded-3 p-lg-5 bg-dark">
     <div class="d-flex align-items-center justify-content-center">
       <div *ngIf="editProduct" class="col-lg-6 col-md-12 col-sm-12">
-        <img src="{{editProduct.imageLink}}" style="height:300px;width: 100%;"/>
-        <div class="mb-3">
-          <label for="imageLink" class="form-label text-white">Image Link</label>
-          <input [(ngModel)]="editProduct.imageLink" class="form-control" placeholder="Image Link">
+        <div class="card border border-5 rounded-3">
+          <div class="card-header">
+            Update and Delete Product
+          </div>
+          <div class="card-body">
+            <img src="{{editProduct.imageLink}}" style="height:300px;width: 100%;" />
+            <div class="mb-3">
+              <label for="imageLink" class="form-label">Image Link</label>
+              <input [(ngModel)]="editProduct.imageLink" class="form-control" placeholder="Image Link">
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input [(ngModel)]="editProduct.name" class="form-control" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <input [(ngModel)]="editProduct.description" class="form-control" placeholder="Description">
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Price</label>
+              <input [(ngModel)]="editProduct.price" class="form-control" placeholder="Price">
+            </div>
+            <div class="mb-3">
+              <label for="stock" class="form-label">Stock</label>
+              <input [(ngModel)]="editProduct.stock" class="form-control" placeholder="Stock">
+            </div>
+            <button class="btn btn-info me-2" (click)="updateProduct(editProduct)"
+              *ngIf="editProduct.id">Update</button>
+            <button class="btn btn-danger" (click)="deleteProduct(editProduct)" *ngIf="editProduct.id">Delete</button>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="name" class="form-label text-white">Name</label>
-          <input [(ngModel)]="editProduct.name" class="form-control" placeholder="Name">
-        </div>
-        <div class="mb-3">
-          <label for="description" class="form-label text-white">Description</label>
-          <input [(ngModel)]="editProduct.description" class="form-control" placeholder="Description">
-        </div>
-        <div class="mb-3">
-          <label for="price" class="form-label text-white">Price</label>
-          <input [(ngModel)]="editProduct.price" class="form-control" placeholder="Price">
-        </div>
-        <div class="mb-3">
-          <label for="stock" class="form-label text-white">Stock</label>
-          <input [(ngModel)]="editProduct.stock" class="form-control" placeholder="Stock">
-        </div>
-        <button class="btn btn-info me-2" (click)="updateProduct(editProduct)" *ngIf="editProduct.id">Update</button>
-        <button class="btn btn-danger" (click)="deleteProduct(editProduct)" *ngIf="editProduct.id">Delete</button>
       </div>
     </div>
   </div>
