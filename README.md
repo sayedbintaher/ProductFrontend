@@ -1,27 +1,15 @@
-# ProductFrontend
+## Note: This project will be updated from time to time. Currently this project only contains CRUD Operation. Login and Register part will be added soon. Hopefully with time a I will make a full stack ecommerce website with good looking UI and Backend Code Structure.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+## [API Github Link Here](https://github.com/sayedbintaher/ProductApiBackend) 
 
-## Development server
+### Homepage of the frontend
+![Screenshot 2022-12-23 191755](https://user-images.githubusercontent.com/72699922/209346417-c2c7b974-a522-4c9e-b584-f93e83cfb903.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Edit Button on Hover
+![Screenshot 2022-12-23 192012](https://user-images.githubusercontent.com/72699922/209346514-c07a3a37-e981-4dd8-9dc1-bc007f7aa0c7.png)
 
-## Code scaffolding
+### Update and delete form 
+![Update and Delete ](https://user-images.githubusercontent.com/72699922/209346700-ccaf2dd4-a0f2-4272-aba7-8627c8664a45.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Add New Product Form 
+![Add Product](https://user-images.githubusercontent.com/72699922/209346773-1b2a5a14-60ea-4d88-a3ec-288b8af15239.png)
